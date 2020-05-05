@@ -26,7 +26,6 @@ export default function (element, config, query, onError) {
       }
       results = query(selector, onError)
       validated =
-        results.length === 1 &&
         (element.el !== undefined
           ? results[0] === element.el
           : results[0] === element)
